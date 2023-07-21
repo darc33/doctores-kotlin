@@ -6,7 +6,7 @@ import jakarta.persistence.*
 import java.time.Instant
 @Entity
 @Table(name = "pacientes")
-class Patient (
+open class Patient (
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         @Column(name="id_paciente")
